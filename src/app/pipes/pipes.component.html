@@ -1,0 +1,23 @@
+  <hr>
+  pipes works!
+  <ul>
+    <li>{{nameObservable}}</li>
+    <li>{{nameObservable | async}}</li>
+    <li>{{pi | number: '3.2-2'}}</li>
+    <li><pre>{{studentone | json}}</pre></li>
+    <li>{{'Martin Fiorentino' | slice:0:7}}</li>
+    <li>{{'Martin Fiorentino' | uppercase}}</li>
+    <li>{{'Martin Fiorentino' | slice:0:7 | uppercase}}</li>
+    <li>{{pi | currency:'EUR':'3.2-2'}}</li>
+    <li>{{pi | percent:'3.2-2'}}</li>
+    <!--<li>{{23 | i18nP}}</li>-->
+    <li>{{todaysDate | date:'yyyy-mm-dd a'}}</li>
+
+    <li>{{" Martin Fiorentino . " | trim}}</li>
+    <li>{{44 | doubleValue:5}}</li>
+
+  </ul>
+
+  <ul >
+    <li *ngFor="let student of students | filterByID:2">{{student.id}} {{student.name}}</li>
+  </ul>

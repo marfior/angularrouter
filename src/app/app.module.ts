@@ -9,13 +9,21 @@ import { SecondComponent } from './second/second.component';
 import {RouterModule} from "@angular/router";
 import {appRoutes} from "./app.routes";
 import { ShowDetailsComponent } from './show-details/show-details.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { TrimPipe } from './trim.pipe';
+import { DoubleValuePipe } from './double-value.pipe';
+import { FilterByIDPipe } from './filter-by-id.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
     SecondComponent,
-    ShowDetailsComponent
+    ShowDetailsComponent,
+    PipesComponent,
+    TrimPipe,
+    DoubleValuePipe,
+    FilterByIDPipe
   ],
   imports: [
     BrowserModule,
