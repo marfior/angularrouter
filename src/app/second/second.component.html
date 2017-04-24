@@ -1,0 +1,9 @@
+<p>
+  second works!
+</p>
+
+
+<tr *ngFor="let detail of detailsList">
+  <td>{{detail.id}}</td>
+  <td><button [routerLink]="[detail.id]" >Show Detail</button> </td>
+</tr>

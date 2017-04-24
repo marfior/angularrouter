@@ -17,7 +17,7 @@ export class WikipediasearchComponent implements OnInit {
   constructor(private wikipediasearchService: WikipediasearchService) {
 
     this.term$
-      .debounceTime(500)
+      .debounceTime(500)            // does not send the search for about half of a second
       .distinctUntilChanged()
       .subscribe(term => {
         this.wikipediasearchService.search(this.term).subscribe(results => {

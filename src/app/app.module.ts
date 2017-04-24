@@ -15,27 +15,29 @@ import { DoubleValuePipe } from './double-value.pipe';
 import { FilterByIDPipe } from './filter-by-id.pipe';
 import { WikipediasearchComponent } from './wikipediasearch/wikipediasearch.component';
 import {WikipediasearchService} from "./Services/WikipediasearchService";
+import { FormsComponent } from './forms/forms.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FirstComponent,
-    SecondComponent,
-    ShowDetailsComponent,
-    PipesComponent,
-    TrimPipe,
-    DoubleValuePipe,
-    FilterByIDPipe,
-    WikipediasearchComponent
+    // FirstComponent,
+    // SecondComponent,
+    // ShowDetailsComponent,
+    // PipesComponent,
+    // TrimPipe,
+    // DoubleValuePipe,
+    // FilterByIDPipe,
+    // WikipediasearchComponent,
+    // FormsComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule,
-    JsonpModule,
-    RouterModule.forRoot(appRoutes)
+    // FormsModule,
+    // HttpModule,
+    // JsonpModule,
+    // RouterModule.forRoot(appRoutes)
   ],
-  providers: [WikipediasearchService],
+  // providers: [WikipediasearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

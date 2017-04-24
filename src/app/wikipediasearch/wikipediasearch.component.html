@@ -1,0 +1,7 @@
+<hr>
+
+
+<input type="text" [(ngModel)]="term" (input)="autoComplete()">
+<ul *ngFor="let result of arrResults">
+  <li>{{result}}</li>
+</ul>
